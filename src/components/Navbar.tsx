@@ -96,15 +96,15 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm relative z-50">
+    <header className="bg-white shadow-sm relative z-50 font-times">
       {/* Top Bar */}
-      <div className="bg-gray-100">
+      <div className="bg-blue-400">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-10">
-            <div className="text-sm text-gray-600">Welcome to Asian Paints</div>
+            <div className="text-sm-bold text-blue-900 font-times">Welcome to Vertex Paints</div>
             <div className="flex items-center space-x-4 text-sm">
-              <Link to="/track-order" className="text-gray-600 hover:text-primary-600">Track Order</Link>
-              <Link to="/login" className="text-gray-600 hover:text-primary-600">Login</Link>
+              {/* <Link to="/track-order" className="text-gray-600 hover:text-primary-600">Track Order</Link>
+              <Link to="/login" className="text-gray-600 hover:text-primary-600">Login</Link> */}
             </div>
           </div>
         </div>
@@ -117,9 +117,9 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
               <img 
-                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=200"
-                alt="Asian Paints"
-                className="h-8"
+                src="https://vertexpaint.in/img/logo.png"
+                alt="Vertex Paints"
+                className="h-12"
               />
             </Link>
 
@@ -142,7 +142,7 @@ const Navbar = () => {
                   onMouseEnter={() => setActiveMenu(key)}
                   onMouseLeave={() => setActiveMenu(null)}
                 >
-                  <button className="py-8 font-medium text-gray-700 hover:text-primary-600 transition-colors duration-200">
+                  <button className="py-8 font-medium text-gray-700 hover:text-primary-600 transition-colors duration-200 font-times">
                     {data.title}
                     <div className="absolute bottom-6 left-0 w-full h-0.5 bg-primary-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
                   </button>
@@ -159,7 +159,7 @@ const Navbar = () => {
                         <div className="grid grid-cols-3 gap-8">
                           {data.sections.map((section, idx) => (
                             <div key={idx} className="min-w-[200px]">
-                              <h3 className="font-bold text-gray-900 mb-4 text-sm tracking-wider">
+                              <h3 className="font-bold text-gray-900 mb-4 text-sm tracking-wider font-times">
                                 {section.title}
                               </h3>
                               <ul className="space-y-2">
@@ -167,7 +167,7 @@ const Navbar = () => {
                                   <li key={itemIdx}>
                                     <Link 
                                       to={item.link}
-                                      className="text-gray-600 hover:text-primary-600 transition-colors duration-200 block py-1"
+                                      className="text-gray-600 hover:text-primary-600 transition-colors duration-200 block py-1 font-times"
                                       onClick={() => setActiveMenu(null)}
                                     >
                                       {item.name}
@@ -187,7 +187,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-              <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t shadow-lg">
+              <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t shadow-lg font-times">
                 <div className="container mx-auto px-4 py-4">
                   {Object.entries(MENU_DATA).map(([key, data]) => (
                     <div key={key} className="mb-6">
@@ -200,7 +200,7 @@ const Navbar = () => {
                               <li key={itemIdx}>
                                 <Link 
                                   to={item.link}
-                                  className="text-gray-600 hover:text-primary-600 block py-1"
+                                  className="text-gray-600 hover:text-primary-600 block py-1 font-times"
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                   {item.name}

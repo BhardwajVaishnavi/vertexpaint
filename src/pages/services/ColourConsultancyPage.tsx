@@ -1,4 +1,5 @@
 import React from 'react';
+import PageWrapper from '../../components/layout/PageWrapper';
 
 const ColourConsultancyPage = () => {
   const CONSULTATION_IMAGES = {
@@ -8,10 +9,12 @@ const ColourConsultancyPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Colour Consultancy</h1>
-      {/* Add content */}
-    </div>
+    <PageWrapper>
+      <div className="font-times container mx-auto px-4 py-8">
+        <h1 className="text-3xl font-bold mb-8">Colour Consultancy</h1>
+        {/* Add content */}
+      </div>
+    </PageWrapper>
   );
 };
 

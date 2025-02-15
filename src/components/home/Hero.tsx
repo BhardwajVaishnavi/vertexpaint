@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="font-times relative">
       {/* Main Hero Slider */}
       <div className="relative h-[600px]">
         <img

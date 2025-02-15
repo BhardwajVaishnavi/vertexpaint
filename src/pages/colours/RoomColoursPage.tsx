@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import PageWrapper from '../../components/layout/PageWrapper';
 
 const ROOM_COLOURS = {
   'living-room': {
@@ -40,7 +41,7 @@ const RoomColoursPage = () => {
   if (!roomData) return <div>Room not found</div>;
 
   return (
-    <div className="bg-gray-50">
+    <PageWrapper>
       <div className="bg-primary-600 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">{roomData.title}</h1>
@@ -75,7 +76,7 @@ const RoomColoursPage = () => {
           ))}
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

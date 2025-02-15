@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { products } from '../../data/products';
+import PageWrapper from '../../components/layout/PageWrapper';
 
 const CATEGORIES = [
   { id: 'all', name: 'All Products' },
@@ -19,7 +20,7 @@ const ProductsPage = () => {
     : products.filter(p => p.category === selectedCategory);
 
   return (
-    <div className="bg-gray-50">
+    <PageWrapper>
       {/* Hero Section */}
       <div className="bg-primary-600 text-white py-16">
         <div className="container mx-auto px-4">
@@ -101,7 +102,7 @@ const ProductsPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 };
 

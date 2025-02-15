@@ -18,6 +18,9 @@ module.exports = {
           900: '#0c4a6e',
         },
       },
+      fontFamily: {
+        'times': ['Times New Roman', 'serif'],
+      },
     },
   },
   plugins: [

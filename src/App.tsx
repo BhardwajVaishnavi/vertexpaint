@@ -41,92 +41,94 @@ import CartPage from './pages/services/CartPage';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            {/* Main Pages */}
-            <Route path="/" element={<HomePage />} />
-            <Route path="/visualizer" element={<ColorVisualizerPage />} />
-            
-            {/* Products */}
-            <Route path="/products" element={<ProductsPage />} />
-            <Route path="/products/:category" element={<ProductsPage />} />
-            <Route path="/products/detail/:id" element={<ProductDetail />} />
-            
-            {/* Paint Routes */}
-            <Route path="/products/interior" element={<InteriorPaintsPage />} />
-            <Route path="/products/interior/:id" element={<ProductDetail />} />
-            <Route path="/products/exterior" element={<ExteriorPaintsPage />} />
-            <Route path="/products/exterior/:id" element={<ProductDetail />} />
-            <Route path="/textures" element={<TexturesPage />} />
-            <Route path="/textures/:id" element={<TextureDetail />} />
-            
-            {/* Services */}
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/services/safe-painting" element={<SafePaintingPage />} />
-            <Route path="/services/waterproofing" element={<WaterproofingPage />} />
-            <Route path="/services/book-painter" element={<BookPainterPage />} />
-            <Route path="/services/colour-consultancy" element={<ColourConsultancyPage />} />
-            <Route path="/services/dealer-locator" element={<DealerLocatorPage />} />
-            <Route path="/services/paint-calculator" element={<PaintCalculatorPage />} />
-            
-            {/* Blog */}
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/blog/:id" element={<BlogDetail />} />
-            
-            {/* Other Pages */}
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            
-            {/* Legal Pages */}
-            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-            <Route path="/terms-of-use" element={<TermsOfUsePage />} />
-            <Route path="/sitemap" element={<SitemapPage />} />
-            
-            {/* Paint Routes */}
-            <Route path="/products/interior" element={<InteriorPaintsPage />} />
-            <Route path="/products/interior/:id" element={<ProductDetail />} />
-            <Route path="/products/exterior" element={<ExteriorPaintsPage />} />
-            <Route path="/products/exterior/:id" element={<ProductDetail />} />
-            <Route path="/textures" element={<TexturesPage />} />
-            <Route path="/textures/:id" element={<TextureDetail />} />
-            
-            {/* Colour Routes */}
-            <Route path="/colours/rooms" element={<ColourRoomsPage />} />
-            <Route path="/colours/:room" element={<RoomColoursPage />} />
-            <Route path="/colours/combinations" element={<ColourCombinationsPage />} />
-            
-            {/* Service Routes */}
-            <Route path="/services/safe-painting" element={<SafePaintingPage />} />
-            <Route path="/services/waterproofing" element={<WaterproofingPage />} />
-            <Route path="/services/book-painter" element={<BookPainterPage />} />
-            <Route path="/services/colour-consultancy" element={<ColourConsultancyPage />} />
-            
-            {/* Utility Routes */}
-            <Route path="/store-locator" element={<StoreLocatorPage />} />
-            <Route path="/paint-budget-calculator" element={<PaintCalculatorPage />} />
-            <Route path="/track-order" element={<TrackOrderPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/cart" element={<CartPage />} />
-            
-            {/* Admin Routes */}
-            <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/admin/products" element={<AdminProductList />} />
-            <Route path="/admin/products/new" element={<AdminProductForm />} />
-            <Route path="/admin/products/:id/edit" element={<AdminProductForm />} />
-            <Route path="/admin/blogs" element={<AdminBlogList />} />
-            <Route path="/admin/blogs/new" element={<AdminBlogForm />} />
-            <Route path="/admin/blogs/:id/edit" element={<AdminBlogForm />} />
-            <Route path="/admin/guides" element={<AdminGuideList />} />
-            <Route path="/admin/guides/new" element={<AdminGuideForm />} />
-            <Route path="/admin/guides/:id/edit" element={<AdminGuideForm />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="font-times">
+      <Router>
+        <div className="min-h-screen flex flex-col">
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              {/* Main Pages */}
+              <Route path="/" element={<HomePage />} />
+              <Route path="/visualizer" element={<ColorVisualizerPage />} />
+              
+              {/* Products */}
+              <Route path="/products" element={<ProductsPage />} />
+              <Route path="/products/:category" element={<ProductsPage />} />
+              <Route path="/products/detail/:id" element={<ProductDetail />} />
+              
+              {/* Paint Routes */}
+              <Route path="/products/interior" element={<InteriorPaintsPage />} />
+              <Route path="/products/interior/:id" element={<ProductDetail />} />
+              <Route path="/products/exterior" element={<ExteriorPaintsPage />} />
+              <Route path="/products/exterior/:id" element={<ProductDetail />} />
+              <Route path="/textures" element={<TexturesPage />} />
+              <Route path="/textures/:id" element={<TextureDetail />} />
+              
+              {/* Services */}
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/services/safe-painting" element={<SafePaintingPage />} />
+              <Route path="/services/waterproofing" element={<WaterproofingPage />} />
+              <Route path="/services/book-painter" element={<BookPainterPage />} />
+              <Route path="/services/colour-consultancy" element={<ColourConsultancyPage />} />
+              <Route path="/services/dealer-locator" element={<DealerLocatorPage />} />
+              <Route path="/services/paint-calculator" element={<PaintCalculatorPage />} />
+              
+              {/* Blog */}
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:id" element={<BlogDetail />} />
+              
+              {/* Other Pages */}
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              
+              {/* Legal Pages */}
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+              <Route path="/terms-of-use" element={<TermsOfUsePage />} />
+              <Route path="/sitemap" element={<SitemapPage />} />
+              
+              {/* Paint Routes */}
+              <Route path="/products/interior" element={<InteriorPaintsPage />} />
+              <Route path="/products/interior/:id" element={<ProductDetail />} />
+              <Route path="/products/exterior" element={<ExteriorPaintsPage />} />
+              <Route path="/products/exterior/:id" element={<ProductDetail />} />
+              <Route path="/textures" element={<TexturesPage />} />
+              <Route path="/textures/:id" element={<TextureDetail />} />
+              
+              {/* Colour Routes */}
+              <Route path="/colours/rooms" element={<ColourRoomsPage />} />
+              <Route path="/colours/:room" element={<RoomColoursPage />} />
+              <Route path="/colours/combinations" element={<ColourCombinationsPage />} />
+              
+              {/* Service Routes */}
+              <Route path="/services/safe-painting" element={<SafePaintingPage />} />
+              <Route path="/services/waterproofing" element={<WaterproofingPage />} />
+              <Route path="/services/book-painter" element={<BookPainterPage />} />
+              <Route path="/services/colour-consultancy" element={<ColourConsultancyPage />} />
+              
+              {/* Utility Routes */}
+              <Route path="/store-locator" element={<StoreLocatorPage />} />
+              <Route path="/paint-budget-calculator" element={<PaintCalculatorPage />} />
+              <Route path="/track-order" element={<TrackOrderPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/cart" element={<CartPage />} />
+              
+              {/* Admin Routes */}
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin/products" element={<AdminProductList />} />
+              <Route path="/admin/products/new" element={<AdminProductForm />} />
+              <Route path="/admin/products/:id/edit" element={<AdminProductForm />} />
+              <Route path="/admin/blogs" element={<AdminBlogList />} />
+              <Route path="/admin/blogs/new" element={<AdminBlogForm />} />
+              <Route path="/admin/blogs/:id/edit" element={<AdminBlogForm />} />
+              <Route path="/admin/guides" element={<AdminGuideList />} />
+              <Route path="/admin/guides/new" element={<AdminGuideForm />} />
+              <Route path="/admin/guides/:id/edit" element={<AdminGuideForm />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </div>
   );
 }
 

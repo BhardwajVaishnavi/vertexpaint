@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">About Us</h3>
             <p className="text-gray-400 mb-4">
-              Asian Paints is India's leading paint company with a rich heritage of technology and innovation.
+              Vertex Paints is India's leading paint company with a rich heritage of technology and innovation.
             </p>
             <img 
               src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=200"
@@ -42,16 +42,16 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
               <li>Toll Free: 1800-209-5678</li>
-              <li>Email: support@asianpaints.com</li>
+              <li>Email: support@vertexpaint.com</li>
               <li className="pt-4">
                 <div className="flex space-x-4">
-                  <a href="https://facebook.com/asianpaints" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://twitter.com/asianpaints" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a href="https://instagram.com/asianpaints" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white">
                     <i className="fab fa-instagram"></i>
                   </a>
                 </div>
@@ -68,7 +68,7 @@ const Footer = () => {
               <Link to="/sitemap" className="hover:text-white">Sitemap</Link>
             </div>
             <div>
-              © {new Date().getFullYear()} Asian Paints Ltd. All rights reserved.
+              © {new Date().getFullYear()} Vertex Paints Ltd. All rights reserved by Wipster Technologies Private Limited
             </div>
           </div>
         </div>
